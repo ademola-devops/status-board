@@ -1,0 +1,13 @@
+{
+  "name": "status-board-backend",
+  "version": "1.0.0",
+  "description": "Express API that reports version, environment and pod hostname",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

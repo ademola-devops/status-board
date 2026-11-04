@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Status Board</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #0f172a; color: #e2e8f0; margin: 0; padding: 32px; }
+    h1 { margin-top: 0; }
+    .env { display: inline-block; padding: 4px 12px; border-radius: 999px; font-weight: 600; background: #334155; }
+    .env.staging { background: #b45309; }
+    .env.production { background: #15803d; }
+    table { margin-top: 24px; border-collapse: collapse; }
+    td { padding: 8px 16px; border-bottom: 1px solid #334155; }
+    td:first-child { color: #94a3b8; }
+    .error { color: #f87171; }
+  </style>
+</head>
+<body>
+  <h1>Status Board <span id="env" class="env">loading</span></h1>
+  <p id="message"></p>
+  <table>
+    <tr><td>Version</td><td id="version">-</td></tr>
+    <tr><td>Answered by pod</td><td id="hostname">-</td></tr>
+    <tr><td>Last update</td><td id="time">-</td></tr>
+  </table>
+  <p id="error" class="error"></p>
+  <script src="app.js"></script>
+</body>
+</html>
